@@ -27,3 +27,6 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+- task: PublishPipelineArtifact@0
+  inputs:
+    artifactName: 'drop'
